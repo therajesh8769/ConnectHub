@@ -15,7 +15,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: 'http://localhost:5173', // Vite dev server
+  origin: 'https://connect-indol-ten.vercel.app', // Vite dev server
   credentials: true
 }));
 app.use(express.json());
