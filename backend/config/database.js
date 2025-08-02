@@ -1,15 +1,22 @@
+// Updated connectDB.js
 import mongoose from 'mongoose';
-import dotenv from 'dotenv';
 
-dotenv.config();
+let isConnected = false;
 
 const connectDB = async () => {
+  if (isConnected) return;
+
   try {
-    const conn = await mongoose.connect(process.env.MONGODB_URI);
-    console.log(`MongoDB Connected: ${conn.connection.host}`);
+    const db = await mongoose.connect(process.env.MONGODB_URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+
+    isConnected = true;
+    console.log('MongoDB Connected');
   } catch (error) {
-    console.error('Database connection error:', error.message);
-    process.exit(1);
+    console.error('MongoDB connection failed:', error.message);
+    throw error;
   }
 };
 
