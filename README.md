@@ -5,21 +5,21 @@ A professional networking platform built with the MERN stack, featuring user aut
 ## Features
 
 ### User Authentication
-- ✅ Register/Login with email and password
-- ✅ Password hashing using bcrypt
-- ✅ JWT token-based authentication
-- ✅ Protected routes with middleware
+- Register/Login with email and password
+- Password hashing using bcrypt
+- JWT token-based authentication
+- Protected routes with middleware
 
 ### User Profiles
-- ✅ User profiles with name, email, and bio
-- ✅ Editable name and bio
-- ✅ View own profile and public profiles of others
+- User profiles with name, email, and bio
+- Editable name and bio
+- View own profile and public profiles of others
 
 ### Post Feed
-- ✅ Text-only posts
-- ✅ Global feed with all posts
-- ✅ Display author name and creation timestamp
-- ✅ Individual user profile pages with their posts
+- Text-only posts
+- Global feed with all posts
+- Display author name and creation timestamp
+- ndividual user profile pages with their posts
 
 ## Project Structure
 
@@ -85,7 +85,7 @@ root/
    ```env
    PORT=5000
    MONGODB_URI=mongodb://localhost:27017/linkedin-clone
-   JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
+   JWT_SECRET=""
    NODE_ENV=development
    ```
 
@@ -122,15 +122,15 @@ root/
 
 ## Features Implemented
 
-- ✅ Secure user authentication with JWT
-- ✅ Password hashing and validation
-- ✅ Protected API routes
-- ✅ User profile management
-- ✅ Global post feed
-- ✅ Individual user profiles with posts
-- ✅ Responsive design
-- ✅ Error handling and loading states
-- ✅ Professional LinkedIn-inspired UI
+-  Secure user authentication with JWT
+-  Password hashing and validation
+-  Protected API routes
+-  User profile management
+-  Global post feed
+-  Individual user profiles with posts
+-  Responsive design
+-  Error handling and loading states
+-  Professional LinkedIn-inspired UI
 
 ## Security Features
 
